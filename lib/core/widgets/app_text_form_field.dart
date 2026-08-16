@@ -10,11 +10,13 @@ class AppTextFormField extends StatelessWidget {
     this.contentPadding,
     this.enabledBorder,
     this.focusedBorder,
-    this.hintStyle,
+    required this.hintStyle,
     this.inputtextStyle,
     this.isObscureText,
     this.suffixIcon,
     this.backgroundColor,
+    this.controller,
+    required this.validator,
   });
   final EdgeInsetsGeometry? contentPadding;
   final InputBorder? enabledBorder;
@@ -25,9 +27,12 @@ class AppTextFormField extends StatelessWidget {
   final Widget? suffixIcon;
   final String hint;
   final Color? backgroundColor;
+  final TextEditingController? controller;
+  final Function(String?) validator;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: controller,
       decoration: InputDecoration(
         filled: true,
         fillColor: backgroundColor ?? AppColors.moreLightGray,
@@ -47,12 +52,23 @@ class AppTextFormField extends StatelessWidget {
               borderSide: BorderSide(color: AppColors.mainBlue, width: 1.3),
               borderRadius: BorderRadius.circular(16),
             ),
+        errorBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: Colors.red, width: 1.3),
+          borderRadius: BorderRadius.circular(16),
+        ),
+        focusedErrorBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: Colors.red, width: 1.3),
+          borderRadius: BorderRadius.circular(16),
+        ),
         hintText: hint,
         hintStyle: hintStyle ?? TextStyles.font14LightGrayRegular,
         suffixIcon: suffixIcon,
       ),
       obscureText: isObscureText ?? false,
       style: inputtextStyle ?? TextStyles.font14DarkBlueMedium,
+      validator: (value) {
+        return validator(value);
+      },
     );
   }
 }
