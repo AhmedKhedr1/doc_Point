@@ -4,8 +4,8 @@ import 'package:doc_point/core/helper/extensions.dart';
 import 'package:doc_point/core/routing/routes.dart';
 import 'package:doc_point/core/theming/app_colors.dart';
 import 'package:doc_point/core/theming/text_styles.dart';
-import 'package:doc_point/features/login/logic/logi_cubit/login_cubit.dart';
-import 'package:doc_point/features/login/logic/logi_cubit/login_state.dart';
+import 'package:doc_point/features/login/logic/login_cubit/login_cubit.dart';
+import 'package:doc_point/features/login/logic/login_cubit/login_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

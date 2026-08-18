@@ -1,7 +1,7 @@
 import 'package:doc_point/core/helper/app_regex.dart';
 import 'package:doc_point/core/helper/spacing.dart';
 import 'package:doc_point/core/widgets/app_text_form_field.dart';
-import 'package:doc_point/features/login/logic/logi_cubit/login_cubit.dart';
+import 'package:doc_point/features/login/logic/login_cubit/login_cubit.dart';
 import 'package:doc_point/features/login/ui/views/widgets/password_validations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -97,8 +97,7 @@ class _EmailAndPasswordState extends State<EmailAndPassword> {
       ),
     );
   }
-
-  @override
+    @override
   void dispose() {
     passwordController.dispose();
     super.dispose();
