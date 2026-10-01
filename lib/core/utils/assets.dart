@@ -3,4 +3,5 @@ abstract class Assets {
   static const String logolowOpacity = 'assets/svgs/background.svg';
   static const String doctorImage = 'assets/images/doctorimage.png';
   static const String docdoc = 'assets/svgs/Docdoc.svg';
+  static const String notification = 'assets/images/notification.png';
 }
