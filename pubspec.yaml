@@ -57,6 +57,7 @@ dependencies:
   # code generator for retrofit
   retrofit_generator: ^10.2.7
   pretty_dio_logger: ^1.4.0
+  firebase_core: ^5.1.0
 
 dev_dependencies:
   flutter_test:

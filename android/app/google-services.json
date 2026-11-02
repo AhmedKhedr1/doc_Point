@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "985489877540",
+    "project_id": "doc-doc-2b608",
+    "storage_bucket": "doc-doc-2b608.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985489877540:android:4172e24442c75b657746b1",
+        "android_client_info": {
+          "package_name": "com.example.doc_point.production"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtGjbHwlCs5P4qTqmbRdDReS6CwzRmfIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
